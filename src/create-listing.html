@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>::: Create Listing :::</title>
+    <script type="module" src="./js/main.js" defer></script>
+    <script type="module" src="./js/create-listing.js" defer></script>
+</head>
+<body>
+<header class="container mx-auto p-8">
+    <h1 class="text-3xl font-bold underline text-center">
+        Create a list
+    </h1>
+</header>
+<main class="container mx-auto">
+    <form
+            id="create-listing-form"
+            class="flex flex-col gap-y-2 p-8 m-8 mx-auto w-96 text-left bg-gray-300 rounded-md border shadow">
+        <h2 class="mb-4 text-2xl font-semibold text-gray-700 underline">Create A List 🧑</h2>
+
+        <div class="flex flex-col gap-y-1">
+            <label for="listingTitle" class="text-gray-600">Listing Title: (Required) </label>
+            <input
+                    id="listingTitle"
+                    class="p-2 rounded-md"
+                    name="postTitle"
+                    type="text"
+                    placeholder="Enter a list title">
+        </div>
+        <div class="flex flex-col gap-y-1">
+            <label for="listDescription" class="text-gray-600">List Description: (Required) </label>
+            <textarea
+                    rows="3"
+                    name="listDescription"
+                    id="listDescription"
+                    class="block w-full resize-none border-0 placeholder-gray-400 focus:ring-0 sm:text-sm p-2 rounded-md"
+                    placeholder="Write a description of your car..."></textarea>
+        </div>
+        <!--        List tags-->
+        <h3 class="underline font-bold">Add tags for your listing</h3>
+        <div class="flex flex-col gap-y-1">
+            <label for="listTagOne" class="text-gray-600">List Tag One: (optional) </label>
+            <input
+                    type="text"
+                    name="listTagOne"
+                    id="listTagOne"
+                    class="block w-full resize-none border-0 placeholder-gray-400 focus:ring-0 sm:text-sm p-2 rounded-md"
+                    placeholder="tag 1..."/>
+        </div>
+        <div class="flex flex-col gap-y-1">
+            <label for="listTagTwo" class="text-gray-600">List Tag Two: (optional) </label>
+            <input
+                    type="text"
+                    name="listTagTwo"
+                    id="listTagTwo"
+                    class="block w-full resize-none border-0 placeholder-gray-400 focus:ring-0 sm:text-sm p-2 rounded-md"
+                    placeholder="tag 2..."/>
+        </div>
+        <div class="flex flex-col gap-y-1">
+            <label for="listTagThree" class="text-gray-600">List Tag Three: (optional) </label>
+            <input
+                    type="text"
+                    name="listTagThree"
+                    id="listTagThree"
+                    class="block w-full resize-none border-0 placeholder-gray-400 focus:ring-0 sm:text-sm p-2 rounded-md"
+                    placeholder="tag 3..."/>
+        </div>
+
+        <!--        List images-->
+        <h3 class="underline font-bold">Add images URL for your listing</h3>
+        <div class="flex flex-col gap-y-1">
+            <label for="listImgOne" class="text-gray-600">List Img One: (optional) </label>
+            <input
+                    type="text"
+                    name="listImgOne"
+                    id="listImgOne"
+                    class="block w-full resize-none border-0 placeholder-gray-400 focus:ring-0 sm:text-sm p-2 rounded-md"
+                    placeholder="img 1..."/>
+        </div>
+        <div class="flex flex-col gap-y-1">
+            <label for="listImgTwo" class="text-gray-600">List Img Two: (optional) </label>
+            <input
+                    type="text"
+                    name="listImgTwo"
+                    id="listImgTwo"
+                    class="block w-full resize-none border-0 placeholder-gray-400 focus:ring-0 sm:text-sm p-2 rounded-md"
+                    placeholder="tag 2..."/>
+        </div>
+        <div class="flex flex-col gap-y-1">
+            <label for="listImgThree" class="text-gray-600">List Img Three: (optional) </label>
+            <input
+                    type="text"
+                    name="listImgThree"
+                    id="listImgThree"
+                    class="block w-full resize-none border-0 placeholder-gray-400 focus:ring-0 sm:text-sm p-2 rounded-md"
+                    placeholder="img 3..."/>
+        </div>
+
+        <div class="flex flex-col gap-y-1">
+            <label for="listingEndDate" class="text-gray-600">List End Dare: (required) </label>
+            <input
+                    id="listingEndDate"
+                    name="listingEndDate"
+                    type="datetime-local"
+                    class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                    placeholder="2020-01-01T00:00:00.000Z"
+            />
+        </div>
+
+        <button class="justify-center capitalize inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                type="submit">
+            create
+        </button>
+    </form>
+</main>
+</body>
+</html>
