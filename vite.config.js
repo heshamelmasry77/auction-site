@@ -12,5 +12,6 @@ export default {
                 listingDetails: resolve(__dirname, 'src/listing-details.html'),
             },
         },
+        outDir: '../dist',
     },
 }
